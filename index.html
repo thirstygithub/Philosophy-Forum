@@ -265,6 +265,245 @@ h2::after {
             height: 28px;
         }
 
+        /* Theme Toggle Styles */
+        .theme-toggle-container {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 10;
+        }
+
+        .theme-toggle-btn {
+            background: rgba(20,20,20,.8);
+            color: var(--primary-orange);
+            border: 1px solid var(--primary-orange);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 10px var(--primary-orange);
+        }
+
+        .theme-toggle-btn:hover {
+            background: rgba(194,124,21,.2);
+            box-shadow: 0 0 15px var(--primary-orange);
+            transform: scale(1.1);
+        }
+
+        /* Rainbow Theme */
+        .theme-rainbow {
+            --primary-orange: #ff0080;
+            --dark-bg: #0a0a0a;
+            --light-text: #f0f0f0;
+            --gray-text: #aaa;
+            --accent-orange: #ff00ff;
+        }
+
+        .theme-rainbow .logo {
+            filter: hue-rotate(180deg) saturate(2);
+        }
+
+        .theme-rainbow #matrix-bg {
+            opacity: 0.4;
+        }
+
+        /* Update all orange borders and glows for rainbow theme */
+        .theme-rainbow header,
+        .theme-rainbow footer,
+        .theme-rainbow .terminal-prompt,
+        .theme-rainbow section,
+        .theme-rainbow .lesson-card,
+        .theme-rainbow .search-box,
+        .theme-rainbow .game-header,
+        .theme-rainbow .game-frame,
+        .theme-rainbow .game-placeholder,
+        .theme-rainbow .comments-section {
+            border-color: var(--primary-orange) !important;
+        }
+
+        .theme-rainbow .lesson-card:hover,
+        .theme-rainbow .launch-command,
+        .theme-rainbow .btn:hover,
+        .theme-rainbow .fullscreen-btn:hover,
+        .theme-rainbow .search-box:focus {
+            box-shadow: 0 0 15px var(--primary-orange) !important;
+            border-color: var(--accent-orange) !important;
+        }
+
+        /* Cyber Green Theme */
+        .theme-cyber-green {
+            --primary-orange: #00ff00;
+            --dark-bg: #000;
+            --light-text: #00ff00;
+            --gray-text: #008800;
+            --accent-orange: #00cc00;
+        }
+
+        .theme-cyber-green .logo {
+            filter: hue-rotate(120deg) saturate(3);
+        }
+
+        .theme-cyber-green #matrix-bg {
+            opacity: 0.4;
+        }
+
+        /* Update all orange borders and glows for cyber green */
+        .theme-cyber-green header,
+        .theme-cyber-green footer,
+        .theme-cyber-green .terminal-prompt,
+        .theme-cyber-green section,
+        .theme-cyber-green .lesson-card,
+        .theme-cyber-green .search-box,
+        .theme-cyber-green .game-header,
+        .theme-cyber-green .game-frame,
+        .theme-cyber-green .game-placeholder,
+        .theme-cyber-green .comments-section {
+            border-color: var(--primary-orange) !important;
+        }
+
+        .theme-cyber-green .lesson-card:hover,
+        .theme-cyber-green .launch-command,
+        .theme-cyber-green .btn:hover,
+        .theme-cyber-green .fullscreen-btn:hover,
+        .theme-cyber-green .search-box:focus {
+            box-shadow: 0 0 15px var(--primary-orange) !important;
+            border-color: var(--accent-orange) !important;
+        }
+
+        /* Ice Blue Theme */
+        .theme-ice-blue {
+            --primary-orange: #00ccff;
+            --dark-bg: #001122;
+            --light-text: #e0f7ff;
+            --gray-text: #88aacc;
+            --accent-orange: #0088cc;
+        }
+
+        .theme-ice-blue .logo {
+            filter: hue-rotate(200deg) saturate(2);
+        }
+
+        .theme-ice-blue #matrix-bg {
+            opacity: 0.4;
+        }
+
+        /* Update all orange borders and glows for ice blue */
+        .theme-ice-blue header,
+        .theme-ice-blue footer,
+        .theme-ice-blue .terminal-prompt,
+        .theme-ice-blue section,
+        .theme-ice-blue .lesson-card,
+        .theme-ice-blue .search-box,
+        .theme-ice-blue .game-header,
+        .theme-ice-blue .game-frame,
+        .theme-ice-blue .game-placeholder,
+        .theme-ice-blue .comments-section {
+            border-color: var(--primary-orange) !important;
+        }
+
+        .theme-ice-blue .lesson-card:hover,
+        .theme-ice-blue .launch-command,
+        .theme-ice-blue .btn:hover,
+        .theme-ice-blue .fullscreen-btn:hover,
+        .theme-ice-blue .search-box:focus {
+            box-shadow: 0 0 15px var(--primary-orange) !important;
+            border-color: var(--accent-orange) !important;
+        }
+
+        /* Solarized Theme */
+        .theme-solarized {
+            --primary-orange: #2aa198;
+            --dark-bg: #002b36;
+            --light-text: #839496;
+            --gray-text: #586e75;
+            --accent-orange: #268bd2;
+        }
+
+        .theme-solarized .logo {
+            filter: hue-rotate(160deg) saturate(1.5);
+        }
+
+        .theme-solarized #matrix-bg {
+            opacity: 0.4;
+        }
+
+        /* Update all orange borders and glows for solarized */
+        .theme-solarized header,
+        .theme-solarized footer,
+        .theme-solarized .terminal-prompt,
+        .theme-solarized section,
+        .theme-solarized .lesson-card,
+        .theme-solarized .search-box,
+        .theme-solarized .game-header,
+        .theme-solarized .game-frame,
+        .theme-solarized .game-placeholder,
+        .theme-solarized .comments-section {
+            border-color: var(--primary-orange) !important;
+        }
+
+        .theme-solarized .lesson-card:hover,
+        .theme-solarized .launch-command,
+        .theme-solarized .btn:hover,
+        .theme-solarized .fullscreen-btn:hover,
+        .theme-solarized .search-box:focus {
+            box-shadow: 0 0 15px var(--primary-orange) !important;
+            border-color: var(--accent-orange) !important;
+        }
+
+        /* Purple Haze Theme */
+        .theme-purple-haze {
+            --primary-orange: #9b59b6;
+            --dark-bg: #1a1a2e;
+            --light-text: #e2e2e2;
+            --gray-text: #8884d8;
+            --accent-orange: #6c3483;
+        }
+
+        .theme-purple-haze .logo {
+            filter: hue-rotate(270deg) saturate(1.8);
+        }
+
+        .theme-purple-haze #matrix-bg {
+            opacity: 0.4;
+        }
+
+        /* Update all orange borders and glows for purple haze */
+        .theme-purple-haze header,
+        .theme-purple-haze footer,
+        .theme-purple-haze .terminal-prompt,
+        .theme-purple-haze section,
+        .theme-purple-haze .lesson-card,
+        .theme-purple-haze .search-box,
+        .theme-purple-haze .game-header,
+        .theme-purple-haze .game-frame,
+        .theme-purple-haze .game-placeholder,
+        .theme-purple-haze .comments-section {
+            border-color: var(--primary-orange) !important;
+        }
+
+        .theme-purple-haze .lesson-card:hover,
+        .theme-purple-haze .launch-command,
+        .theme-purple-haze .btn:hover,
+        .theme-purple-haze .fullscreen-btn:hover,
+        .theme-purple-haze .search-box:focus {
+            box-shadow: 0 0 15px var(--primary-orange) !important;
+            border-color: var(--accent-orange) !important;
+        }
+
+        /* Amber Theme (Default) */
+        .theme-amber {
+            --primary-orange: #c27c15;
+            --dark-bg: #0a0a0a;
+            --light-text: #f0f0f0;
+            --gray-text: #888;
+            --accent-orange: #e69500;
+        }
+        
         @media (max-width:768px){
             .lessons-grid{grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
             .logo{height:80px}
@@ -287,6 +526,11 @@ h2::after {
                 <div class="logo-container">
                     <img src="images/logo.png" alt="Noah's Tutoring Hub" class="logo">
                 </div>
+                <div class="theme-toggle-container">
+    <button id="themeToggle" class="theme-toggle-btn" title="Cycle Themes">
+        <i class="fas fa-palette"></i>
+    </button>
+</div>
 <p class="tagline">ACCESSING TUTORING HUB...</p>
                 <div class="terminal-prompt">
                     <p class="prompt-line">> SYSTEM BOOTING...</p>
@@ -1797,7 +2041,7 @@ h2::after {
         for(let x=0;x<columns;x++)drops[x]=1
         function drawMatrix(){
             ctx.fillStyle="rgba(10,10,10,0.04)",ctx.fillRect(0,0,canvas.width,canvas.height)
-            ctx.fillStyle="#c27c15",ctx.font=fontSize+"px monospace"
+            ctx.fillStyle=window.matrixColor || "#c27c15",ctx.font=fontSize+"px monospace"
             for(let i=0;i<drops.length;i++){
                 const text=charArray[Math.floor(Math.random()*charArray.length)]
                 ctx.fillText(text,i*fontSize,drops[i]*fontSize)
@@ -1920,6 +2164,58 @@ h2::after {
         // Initialize search stats
         updateSearchStats(lessonCards.length, lessonCards.length);
             }
+                // Theme cycling functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const themes = ['amber', 'rainbow', 'cyber-green', 'ice-blue', 'solarized', 'purple-haze'];
+        let currentThemeIndex = 0;
+
+        // Function to update matrix color based on theme
+        function updateMatrixColor(theme) {
+            const matrixColors = {
+                'amber': '#c27c15',
+                'rainbow': '#ff0080', 
+                'cyber-green': '#00ff00',
+                'ice-blue': '#00ccff',
+                'solarized': '#2aa198',
+                'purple-haze': '#9b59b6'
+            };
+            
+            // This will update the matrix color on next draw cycle
+            window.matrixColor = matrixColors[theme];
+        }
+
+        // Load saved theme from localStorage
+        const savedTheme = localStorage.getItem('selectedTheme');
+        if (savedTheme) {
+            const themeName = savedTheme.replace('theme-', '');
+            document.body.className = savedTheme;
+            currentThemeIndex = themes.indexOf(themeName);
+            updateMatrixColor(themeName);
+        }
+
+        themeToggle.addEventListener('click', function() {
+            // Remove current theme
+            document.body.classList.remove(`theme-${themes[currentThemeIndex]}`);
+            
+            // Cycle to next theme
+            currentThemeIndex = (currentThemeIndex + 1) % themes.length;
+            
+            // Apply new theme
+            document.body.classList.add(`theme-${themes[currentThemeIndex]}`);
+            
+            // Update matrix color
+            updateMatrixColor(themes[currentThemeIndex]);
+            
+            // Save to localStorage
+            localStorage.setItem('selectedTheme', `theme-${themes[currentThemeIndex]}`);
+            
+            // Add click feedback
+            this.style.transform = 'scale(0.9)';
+            setTimeout(() => {
+                this.style.transform = 'scale(1)';
+            }, 150);
+        });
+        
         </script>
     </body>
 </html>
